@@ -41,9 +41,9 @@ public class Animators {
 
     public static void physicBounce(final View view) {
         final SpringAnimation springAnimation = new SpringAnimation(view, DynamicAnimation.TRANSLATION_Y, 0);
-        springAnimation.setStartVelocity(1000);
+        springAnimation.setStartVelocity(2000);
         springAnimation.getSpring().setStiffness(SpringForce.STIFFNESS_VERY_LOW);
-        springAnimation.getSpring().setDampingRatio(SpringForce.DAMPING_RATIO_HIGH_BOUNCY);
+        springAnimation.getSpring().setDampingRatio(SpringForce.DAMPING_RATIO_MEDIUM_BOUNCY);
         springAnimation.start();
     }
 
